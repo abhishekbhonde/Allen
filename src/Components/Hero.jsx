@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-
+import mobile from '../assets/mobile.svg'
+import mobile2 from "../assets/mobile2.svg";
+import mobile3 from "../assets/mobile3.svg";
 const Hero = () => {
   const [image, setImage] = useState(0);
   const [jee, setJee] = useState(0)
@@ -105,8 +107,33 @@ const Hero = () => {
     <div className="text-2xl mt-[100px] font-bold text-center">
     ALLEN App Advantage
     </div>
+
+    <div className=" mt-[80px]">
+    <div className="flex justify-center gap-4 items-center">
+        <div>
+            <h1 className="text-2xl font-semibold">Achieve your dreams <br /> with the ALLEN App!</h1>
+            <p className="mt-[20px] text-slate-400">Top Kota faculty, customised <br /> study tools, and AI-powered <br /> learning—all in one app.</p>
+            <p className="text-slate-200 font-light text-[12px] mt-[20px]">*All impact methodology & <br />measurement validated by</p>
+        </div>
+        <div className="flex ">
+            <img src={mobile} alt="" />
+            <img src={mobile2} alt="" />
+            <img src={mobile3} alt="" />
+        </div>
     </div>
-  );
-};
+    </div>
+    <div>
+        <div className="text-2xl font-bold mt-[100px] ml-[270px]">Discover the perfect online program</div>
+        <div className="border-2 z-10 inline-block rounded-lg border-blue-200 z-10">
+            <h1 className="text-2xl">JEE</h1>
+            <div className="flex justify-between ">
+              <button>View</button>
+              <img  className="w-[200px] " src="https://res.cloudinary.com/dpzpn3dkw/image/upload/v1729081052/200_jee_pnsy0n.webp" alt="" />
+            </div>
+        </div>
+    </div>
+    </div>
+  )
+}
 
 export default Hero;
