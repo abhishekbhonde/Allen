@@ -8,6 +8,7 @@ import Exams from './Components/Exams'
 import Login from './Components/Login'
 import Navbar from './Components/Navbar'
 import Programs from './Components/Programs'
+import Hero from './Components/Hero'
 function App() {
 
   return (
@@ -22,7 +23,6 @@ function App() {
               <Route path='/test-series' element={<TestSeries/>}></Route>
               <Route path='/study-materials' element={<StudyMaterials/>}></Route>
               <Route path='/programs' element={<Programs/>}></Route>
-
             </Routes>
       </Router>
     </>

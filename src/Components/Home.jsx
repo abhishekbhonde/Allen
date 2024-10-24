@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Hero from './Hero';
 
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -18,11 +19,11 @@ const Home = () => {
   }, [images.length]);
 
   return (
-    <div className="flex flex-col justify-center mt-[100px] text-white">
+    <div className="flex flex-col justify-center mt-[130px] text-white">
     <div className="flex flex-col md:flex-row items-center justify-center gap-[200px]">
       {/* Text Section */}
       <div className="text-center md:text-left">
-        <div className="text-4xl font-bold mb-4">
+        <div className="text-3xl font-bold mb-4">
           Your Dream. <br />
           Our Expertise.
         </div>
@@ -53,13 +54,14 @@ const Home = () => {
               <img
                 src={src}
                 alt={`Image ${idx + 1}`}
-                className="w-[400px] h-auto object-cover"
+                className="w-[350px] h-auto object-cover"
               />
             </div>
           ))}
         </div>
       </div>
     </div>
+    <Hero/>
   </div>
   
   );
