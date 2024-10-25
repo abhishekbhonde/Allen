@@ -9,6 +9,7 @@ import Login from './Components/Login'
 import Navbar from './Components/Navbar'
 import Programs from './Components/Programs'
 import Hero from './Components/Hero'
+import Footer from './Components/Footer'
 function App() {
 
   return (
@@ -24,6 +25,7 @@ function App() {
               <Route path='/study-materials' element={<StudyMaterials/>}></Route>
               <Route path='/programs' element={<Programs/>}></Route>
             </Routes>
+            <Footer/>
       </Router>
     </>
   )
